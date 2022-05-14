@@ -3,7 +3,7 @@ body{
     margin: 0;
   }
   h1{
-    position: center;
+    position: fixed;
     top: 50%;
     left: 0;
     width: 100%;
@@ -23,9 +23,11 @@ body{
     padding: 0;
     margin: 0;
   }
+  
   body {
-    background-color:rgb(75, 244, 66);
+    background-color:bisque;
   }
+  
   h1 {
     font-family: 'Courier New', cursive;
     font-size: 7em;
@@ -33,17 +35,19 @@ body{
     text-align: center;
     margin-top: 2em;
     font-weight: 600;
-    position: center;
+    position: fixed;
     top: 50%;
     left: 0;
     width: 100%;
     text-align: center;
     transform:translateY(-200%);
+    
   }
   
   h1 span {
     display: inline-block;
-  } 
+  }
+  
   h1 span span{
     display: inline-block;
     width: auto;
@@ -54,26 +58,39 @@ body{
     opacity: 0;
     position: relative;
   }
+  
   @keyframes animate-characters {
     0% {
       bottom: -0.7em;
       opacity: 1;
-      color:rgb(198, 191, 240);
+      color:azure;
     }
+    
     50% {
       bottom: 0.7em;
-      color:rgb(214, 50, 154);
+      color:tomato;
     }
+  
     100% {
       bottom: 0;
-      opacity: 0.5;
+      opacity: 1;
     }
   }
+
+  audio {
+    
+    position: absolute;
+    top: 105%;
+    right: 44%;
+    animation: fadein ease 5s;
+  }
+
   @keyframes fadein {
     from {
-      opacity: 0 ;
+      opacity: 0;
     }
     to {
-      opacity: 0.5;
+      opacity: 1;
     }
+    
   }

@@ -41,7 +41,7 @@ activate.addEventListener("click", function () {
 		panel.classList.add("show");
 		theCount = setInterval(showCountDown, 500);
 
-	}, 500);
+	}, 1000);
 });
 
 var abort = document.getElementById("abort");

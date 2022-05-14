@@ -67,6 +67,8 @@ button#activate.pushed {
 	cursor: pointer;
 	height: 45vmin;
 	margin-left: -32vmin;
+    -webkit-transform: translate3d(0,0,1px);
+    transform: translate3d(0,0,1px);
 }
 
 .box.opened {
